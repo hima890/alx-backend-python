@@ -27,7 +27,7 @@ jobs:
         pip install pycodestyle
 
     - name: Run pycodestyle
-      run: pycodestyle *.py  # This will check all the Python files in the repo
+      run: pycodestyle .  # This will check all the Python files in the repo
 
     # Optionally, you can fail the workflow if pycodestyle detects any issues
     - name: Check for pycodestyle issues
